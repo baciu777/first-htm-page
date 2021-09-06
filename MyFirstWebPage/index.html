@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>My page</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div> Baciu Cristian :) </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-wrapper">
+            <div class="question1">
+                What do I know?</br>
+
+            </div>
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url('oskar-yildiz-cOkpTiJMGzA-unsplash.jpg')"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="C_C_featuredimage.png" alt="">
+                        </div>
+                        <div class="subtitle">
+                            I learned C and C++ in High School and in the first year of College.
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url('christopher-gower-m_HRfLhgABo-unsplash.jpg')"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images.png" alt="">
+                        </div>
+                        <div class="subtitle">
+                            I learned Python in the first semester of College and I made some projects.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url('markus-spiske-iar-afB0QQw-unsplash.jpg')"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="descărcare.png" alt="">
+                        </div>
+                        <div class="subtitle">
+                            I learned Linux side by side with Operating System in my second semester of College. I learned a lot of cool stuff about computers.
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url('ilya-pavlov-OqtafYT5kTw-unsplash.jpg')"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+
+                            <img src="descărcare.jpg" alt="">
+                        </div>
+                        <div class="subtitle">
+                            I learned C# and SQL for my Certificate of Digital Competence and i made my final project with Datebase;
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    
+
+
+    </div>
+
+
+
+    <!--JAVASCRIPT WANNA BE-->
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+        })
+       
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+</body>
+
+</html>
